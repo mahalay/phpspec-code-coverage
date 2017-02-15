@@ -19,7 +19,7 @@ class ExtensionSpec extends ObjectBehavior
         $this->load($container, []);
 
         $options = $container->get('code_coverage.options');
-        expect($options['format'])->toBe(array('html'));
+        assert($options['format'] == ['html']);
     }
 
     function it_should_transform_format_into_array()
@@ -29,7 +29,7 @@ class ExtensionSpec extends ObjectBehavior
         $this->load($container);
 
         $options = $container->get('code_coverage.options');
-        expect($options['format'])->toBe(array('html'));
+        assert($options['format'] == ['html']);
     }
 
     function it_should_use_singular_output()
@@ -39,6 +39,6 @@ class ExtensionSpec extends ObjectBehavior
         $this->load($container);
 
         $options = $container->get('code_coverage.options');
-        expect($options['output'])->toBe(array('foo' => 'test'));
+        assert($options['output'] == ['foo' => 'test']);
     }
 }
