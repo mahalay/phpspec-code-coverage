@@ -21,10 +21,6 @@
         "ext-xdebug": "To allow coverage generation when not using a recent version of phpdbg"
     },
 
-    "require-dev": {
-        "bossa/phpspec2-expect": "dev-master"
-    },
-
     "extra" : {
         "branch-alias" : {
             "dev-master" : "3.2.x-dev"

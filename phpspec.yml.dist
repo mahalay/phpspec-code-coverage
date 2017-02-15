@@ -1,4 +1,3 @@
-bootstrap: phpspec-bootstrap.php
 suites:
   default:
     psr4_prefix: Mahalay\PhpSpecCodeCoverage
