@@ -1,6 +1,6 @@
 {
-    "name" : "henrikbjorn/phpspec-code-coverage",
-    "description" : "Integrates CodeCoverage with PhpSpec",
+    "name" : "mahalay/phpspec-code-coverage",
+    "description" : "Code Coverage Extension for PhpSpec",
     "license" : "MIT",
 
     "autoload" : {
