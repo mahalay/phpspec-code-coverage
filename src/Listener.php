@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpSpecCodeCoverage\Listener;
+namespace Mahalay\PhpSpecCodeCoverage;
 
 use PhpSpec\Console\ConsoleIO;
 use PhpSpec\Event\ExampleEvent;
@@ -11,7 +11,7 @@ use SebastianBergmann\CodeCoverage\Report;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-class CodeCoverageListener implements EventSubscriberInterface
+class Listener implements EventSubscriberInterface
 {
     private $coverage;
     private $reports;

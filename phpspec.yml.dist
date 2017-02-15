@@ -1,0 +1,6 @@
+bootstrap: phpspec-bootstrap.php
+suites:
+  default:
+    psr4_prefix: Mahalay\PhpSpecCodeCoverage
+    namespace:   Mahalay\PhpSpecCodeCoverage
+    src_path:    %paths.config%/src

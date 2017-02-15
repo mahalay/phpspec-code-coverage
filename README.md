@@ -1,25 +1,21 @@
-[PhpSpec](http://phpspec.net) Code Coverage
+Code Coverage Extension for [PhpSpec](http://phpspec.net)
 ===========================================
 
-__DEPRECATED__: CodeCoverage should not be used
-with spec testing in order to see how good your
-tests are. For that reason, and because i don't 
-use it my self. This library is deprecated and
-will not receive any updates etc. Feel free
-to fork and register on Packagist under a new name
-as long as the LICENSE rules are followed.
+This is a fork of the 
+[original PhpSpec code coverage extension](https://github.com/henrikbjorn/PhpSpecCodeCoverageExtension) which is no 
+longer maintained. 
 
 Install with [Composer](http://getcomposer.org):
 
 ``` bash
-composer require --dev henrikbjorn/phpspec-code-coverage
+composer require --dev mahalay/phpspec-code-coverage
 ```
 
 Enable it in your `phpspec.yml` file:
 
 ``` yaml
 extensions:
-    - PhpSpecCodeCoverage\CodeCoverageExtension
+    - Mahalay\PhpSpecCodeCoverage\Extension
 ```
 
 Now run your specs with the normal `phpspec run` and voilà your code coverage will be available in
@@ -39,7 +35,7 @@ adding a hash of options to the extension key.
 * `output` takes a location relative to the place you are running `phpspec run` (default: `coverage`). If you configure multiple formats, takes a hash of format:output e.g.
 ```yaml
 extensions:
-  PhpSpecCodeCoverage\CodeCoverageExtension:
+  Mahalay\PhpSpecCodeCoverage\Extension:
     format:
       - html
       - clover

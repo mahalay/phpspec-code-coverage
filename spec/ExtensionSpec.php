@@ -1,17 +1,16 @@
 <?php
 
-namespace spec\PhpSpecCodeCoverage;
+namespace spec\Mahalay\PhpSpecCodeCoverage;
 
+use Mahalay\PhpSpecCodeCoverage\Extension;
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
 use PhpSpec\ServiceContainer\IndexedServiceContainer;
 
-class CodeCoverageExtensionSpec extends ObjectBehavior
+class ExtensionSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('\PhpSpecCodeCoverage\CodeCoverageExtension');
+        $this->shouldHaveType(Extension::class);
     }
 
     function it_should_use_html_format_by_default()

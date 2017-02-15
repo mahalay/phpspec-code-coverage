@@ -1,18 +1,17 @@
 <?php
 
-namespace spec\PhpSpecCodeCoverage\Listener;
+namespace spec\Mahalay\PhpSpecCodeCoverage;
 
-use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
+use Mahalay\PhpSpecCodeCoverage\Listener;
 use PhpSpec\Console\ConsoleIO;
 use PhpSpec\Event\SuiteEvent;
-
+use PhpSpec\ObjectBehavior;
+use Prophecy\Argument;
 use SebastianBergmann\CodeCoverage\CodeCoverage;
 use SebastianBergmann\CodeCoverage\Filter;
 use SebastianBergmann\CodeCoverage\Report;
 
-class CodeCoverageListenerSpec extends ObjectBehavior
+class ListenerSpec extends ObjectBehavior
 {
     function let(ConsoleIO $io, CodeCoverage $coverage)
     {
@@ -21,7 +20,7 @@ class CodeCoverageListenerSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('\PhpSpecCodeCoverage\Listener\CodeCoverageListener');
+        $this->shouldHaveType(Listener::class);
     }
 
     function it_should_run_all_reports(
